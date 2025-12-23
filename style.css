@@ -183,6 +183,7 @@ button { cursor: pointer; border: none; }
   width: 32px;
   height: 32px;
   border-radius: 50%;
+
 }
 
 .profile-menu {
@@ -316,7 +317,7 @@ button { cursor: pointer; border: none; }
 /* HERO */
 .hero {
   height: 70vh;
-  background-image: url("./ss.jpg");
+  background-image: url("./img/main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -359,6 +360,10 @@ button { cursor: pointer; border: none; }
 .section-header {
   max-width: 1280px;
   padding: 0 20px 15px;
+}
+.section-header{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 .row-scroll {
@@ -768,7 +773,7 @@ button { cursor: pointer; border: none; }
   height: 460px;              /* matches screenshot height */
   margin: auto;
 
-  background-image: url("./base.avif"); /* your image */
+  background-image: url("./img/season.avif"); /* your image */
   background-size: cover;
   background-position: center;
 
