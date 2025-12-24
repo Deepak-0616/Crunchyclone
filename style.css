@@ -14,8 +14,10 @@
   --muted: #b3b3b3;
   --border: #222222;
 }
-html,body {
- width: 100%;
+
+html,
+body {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -964,6 +966,7 @@ button {
   .ending-content {
     grid-template-columns: 1fr 1fr;
   }
+
   .news-grid {
     grid-template-columns: 1fr;
   }
@@ -971,7 +974,8 @@ button {
   .top-news {
     grid-template-columns: 1fr;
   }
-   .promo-container {
+
+  .promo-container {
     grid-template-columns: 1fr;
     padding: 30px;
   }
