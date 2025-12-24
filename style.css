@@ -320,7 +320,7 @@ button { cursor: pointer; border: none; }
   background-image: url("./img/main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position:right top;
   background-blend-mode: darken;
   display: flex;
   align-items: center;
@@ -863,12 +863,20 @@ button { cursor: pointer; border: none; }
   .season-strip-inner {
     height: 360px;
   }
-
+.season-strip-logo {
+    font-size: 25px;
+  }
   .season-strip-content {
     margin: auto;
     padding: 0 20px;
     text-align: center;
   }
+  .season-strip-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
 }
 
 /* ================= ENDING SECTION ================= */
