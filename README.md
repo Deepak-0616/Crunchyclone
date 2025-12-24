@@ -1,5 +1,6 @@
 ﻿# Crunchyclone
 
-An interactive UI clone of Crunchyroll built using pure HTML, CSS, and JavaScript, focusing on accurate layout, responsiveness, and real-world user interactions.
+An interactive UI clone of Crunchyroll's homepage built using pure HTML, CSS, and JavaScript(No frameworks), focusing on accurate layout and responsiveness.
 
 View here: 
+
