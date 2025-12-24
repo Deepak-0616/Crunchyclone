@@ -22,6 +22,7 @@ body {
 }
 
 body {
+  overscroll-behavior-y: auto;
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -371,9 +372,10 @@ button {
   gap: 16px;
   padding: 0 20px 10px;
   overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
+  touch-action: pan-x pan-y;
 }
 
 .row-scroll::-webkit-scrollbar {
@@ -421,6 +423,7 @@ button {
   border-radius: 6px;
   overflow: hidden;
   transition: transform 0.25s ease;
+  touch-action: manipulation;
 }
 
 .anime-card img {
