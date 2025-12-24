@@ -520,6 +520,9 @@ button { cursor: pointer; border: none; }
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links { display: none; }
+  .hero {
+    height: 40vh;
+  }
   .hero h1 { font-size: 28px; }
   .anime-card {
     width: 140px;
