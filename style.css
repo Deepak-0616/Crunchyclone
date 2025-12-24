@@ -494,7 +494,7 @@ button {
 
 .promo-banner {
   width: 100%;
-  background:#0b0b0b;
+  background:var(--bg);
   padding: 60px 20px;
 }
 
@@ -505,9 +505,7 @@ button {
   grid-template-columns: 1.1fr 1fr;
   gap: 40px;
   align-items: center;
-  background:
-    radial-gradient(circle at top left, #1a1a1a, transparent 60%),
-    radial-gradient(circle at bottom right, #111, transparent 60%);
+  background:var(--surface);
   padding: 50px;
   border-radius: 6px;
 }
