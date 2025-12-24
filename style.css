@@ -1,4 +1,3 @@
-/* RESET */
 *,
 *::before,
 *::after {
@@ -7,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* THEME */
 :root {
   --accent: #f47521;
   --bg: #0b0b0b;
@@ -23,11 +21,16 @@ body {
   color: var(--text);
 }
 
-a { text-decoration: none; color: inherit; }
-button { cursor: pointer; border: none; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+button {
+  cursor: pointer;
+  border: none;
+}
 
-/* NAVBAR */
 .cr-navbar {
   position: sticky;
   top: 0;
@@ -46,7 +49,6 @@ button { cursor: pointer; border: none; }
   align-items: center;
 }
 
-/* LOGO */
 .cr-logo {
   display: flex;
   align-items: center;
@@ -57,7 +59,6 @@ button { cursor: pointer; border: none; }
   margin-right: 24px;
 }
 
-/* LEFT */
 .cr-left {
   display: flex;
   align-items: center;
@@ -68,7 +69,6 @@ button { cursor: pointer; border: none; }
   gap: 8px;
 }
 
-/* NAV ITEMS */
 .cr-menu a,
 .drop-btn {
   height: 44px;
@@ -89,7 +89,6 @@ button { cursor: pointer; border: none; }
   color: white;
 }
 
-/* DROPDOWN */
 .dropdown {
   position: relative;
 }
@@ -132,7 +131,7 @@ button { cursor: pointer; border: none; }
   font-size: 13px;
   color: #888;
   margin-bottom: 10px;
-  
+
 }
 
 .divider {
@@ -140,7 +139,6 @@ button { cursor: pointer; border: none; }
   background: #333;
 }
 
-/* RIGHT */
 .cr-right {
   display: flex;
   align-items: center;
@@ -165,7 +163,6 @@ button { cursor: pointer; border: none; }
   color: gold;
 }
 
-/* PROFILE */
 .profile {
   position: relative;
   display: flex;
@@ -183,7 +180,6 @@ button { cursor: pointer; border: none; }
   width: 32px;
   height: 32px;
   border-radius: 50%;
-
 }
 
 .profile-menu {
@@ -201,6 +197,7 @@ button { cursor: pointer; border: none; }
 .profile.open .profile-menu {
   display: flex;
 }
+
 .profile-menu a {
   display: flex;
   align-items: center;
@@ -227,6 +224,7 @@ button { cursor: pointer; border: none; }
   width: 48px;
   height: 48px;
 }
+
 .mobile-profile-menu {
   position: fixed;
   top: 0;
@@ -266,7 +264,6 @@ button { cursor: pointer; border: none; }
   margin-top: 6px;
 }
 
-/* HAMBURGER */
 .hamburger {
   display: none;
   background: none;
@@ -276,7 +273,6 @@ button { cursor: pointer; border: none; }
   margin-right: 12px;
 }
 
-/* MOBILE MENU */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -313,14 +309,12 @@ button { cursor: pointer; border: none; }
   background: #1c1c1c;
 }
 
-
-/* HERO */
 .hero {
   height: 70vh;
   background-image: url("./img/main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:right top;
+  background-position: right top;
   background-blend-mode: darken;
   display: flex;
   align-items: center;
@@ -352,7 +346,6 @@ button { cursor: pointer; border: none; }
   font-weight: 600;
 }
 
-/* ROWS */
 .anime-section {
   padding: 40px 0;
 }
@@ -361,7 +354,8 @@ button { cursor: pointer; border: none; }
   max-width: 1280px;
   padding: 0 20px 15px;
 }
-.section-header{
+
+.section-header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
 }
@@ -374,32 +368,27 @@ button { cursor: pointer; border: none; }
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x;
-
 }
 
 .row-scroll::-webkit-scrollbar {
   display: none;
 }
-/* SCROLL BUTTONS */
+
 .scroll-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-
   width: 44px;
   height: 80px;
-
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 28px;
-
   border: none;
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 
 .scroll-btn.left {
   left: 0;
@@ -442,11 +431,9 @@ button { cursor: pointer; border: none; }
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.95),
-    rgba(0,0,0,0.3)
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.3));
   padding: 14px;
   display: flex;
   flex-direction: column;
@@ -460,8 +447,6 @@ button { cursor: pointer; border: none; }
   opacity: 1;
 }
 
-
-/* TEXT */
 .card-overlay h3 {
   font-size: 14px;
   margin-bottom: 4px;
@@ -473,7 +458,6 @@ button { cursor: pointer; border: none; }
   margin-bottom: 10px;
 }
 
-/* ACTION ICONS */
 .card-actions {
   display: flex;
   gap: 12px;
@@ -487,7 +471,7 @@ button { cursor: pointer; border: none; }
   border-radius: 4px;
   cursor: pointer;
 }
-/* FOOTER */
+
 .footer {
   border-top: 1px solid var(--border);
 }
@@ -499,37 +483,43 @@ button { cursor: pointer; border: none; }
   color: var(--muted);
 }
 
+@media (max-width: 768px) {
+  .cr-menu {
+    display: none;
+  }
 
-/* ================= MOBILE BREAKPOINT ================= */
-  @media (max-width: 768px) {
-    .cr-menu {
-      display: none;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .hamburger {
-      display: block;
-    }
-    .scroll-btn {
-      display: none;
-    }
-    .dropdown-menu {
+  .scroll-btn {
+    display: none;
+  }
+
+  .dropdown-menu {
     display: none !important;
   }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
   .hero {
     height: 40vh;
   }
-  .hero h1 { font-size: 28px; }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
   .anime-card {
     width: 140px;
     height: 200px;
   }
 }
-/* ================= PROMO BANNER ================= */
+
 .promo-banner {
   width: 100%;
   background: #000;
@@ -550,7 +540,6 @@ button { cursor: pointer; border: none; }
   border-radius: 6px;
 }
 
-/* LEFT */
 .promo-left {
   color: white;
 }
@@ -627,7 +616,6 @@ button { cursor: pointer; border: none; }
   background: #ff8b3d;
 }
 
-/* RIGHT */
 .promo-right img {
   width: 100%;
   height: auto;
@@ -635,7 +623,6 @@ button { cursor: pointer; border: none; }
   object-fit: cover;
 }
 
-/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .promo-container {
     grid-template-columns: 1fr;
@@ -646,9 +633,6 @@ button { cursor: pointer; border: none; }
     font-size: 42px;
   }
 }
-
-
-/* ================= NEWS SECTION ================= */
 
 .news-section {
   background: linear-gradient(135deg, #2bbec0, #2fa8a5);
@@ -663,7 +647,6 @@ button { cursor: pointer; border: none; }
   border-radius: 6px;
 }
 
-/* HEADER */
 .news-header {
   display: flex;
   justify-content: space-between;
@@ -685,14 +668,12 @@ button { cursor: pointer; border: none; }
   color: #fff;
 }
 
-/* GRID */
 .news-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 30px;
 }
 
-/* LEFT : TOP NEWS */
 .top-news {
   display: grid;
   gap: 30px;
@@ -715,7 +696,6 @@ button { cursor: pointer; border: none; }
   color: #aaa;
 }
 
-/* RIGHT : LATEST */
 .latest-news {
   display: flex;
   flex-direction: column;
@@ -746,14 +726,12 @@ button { cursor: pointer; border: none; }
   color: #aaa;
 }
 
-/* HOVER */
 .top-card:hover h3,
 .latest-item:hover h4 {
   color: #f47521;
   cursor: pointer;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .news-grid {
     grid-template-columns: 1fr;
@@ -762,52 +740,44 @@ button { cursor: pointer; border: none; }
   .top-news {
     grid-template-columns: 1fr;
   }
-}/* OUTER WRAPPER */
-/* ================= SEASON STRIP (EXACT) ================= */
+}
 
 .season-strip {
-  background:#0b0b0b;
-  padding: 80px 0; /* black space above & below */
+  background: #0b0b0b;
+  padding: 80px 0;
 }
 
 .season-strip-inner {
   position: relative;
   max-width: 1300px;
-  height: 460px;              /* matches screenshot height */
+  height: 460px;
   margin: auto;
-
-  background-image: url("./img/season.avif"); /* your image */
+  background-image: url("./img/season.avif");
   background-size: cover;
   background-position: center;
-
   display: flex;
   align-items: center;
 }
 
-/* DARK GRADIENT OVERLAY */
 .season-strip-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0,0,0,0.85) 0%,
-    rgba(0,0,0,0.65) 35%,
-    rgba(0,0,0,0.35) 60%,
-    rgba(0,0,0,0.15) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.65) 35%,
+      rgba(0, 0, 0, 0.35) 60%,
+      rgba(0, 0, 0, 0.15) 100%);
 }
 
-/* CONTENT */
 .season-strip-content {
   position: relative;
   z-index: 2;
-  margin-left: auto;        /* pushes content right */
-  padding-right: 140px;     /* EXACT spacing like CR */
+  margin-left: auto;
+  padding-right: 140px;
   color: white;
   text-align: left;
 }
 
-/* LOGO */
 .season-strip-logo {
   display: flex;
   align-items: center;
@@ -822,7 +792,6 @@ button { cursor: pointer; border: none; }
   font-size: 26px;
 }
 
-/* TEXT */
 .season-strip-content h1 {
   font-size: 56px;
   font-weight: 800;
@@ -835,7 +804,6 @@ button { cursor: pointer; border: none; }
   margin-bottom: 26px;
 }
 
-/* BUTTON */
 .season-strip-content button {
   background: #f47521;
   color: #000;
@@ -851,8 +819,6 @@ button { cursor: pointer; border: none; }
   background: #ff8b3d;
 }
 
-/* ================= RESPONSIVE ================= */
-
 @media (max-width: 1024px) {
   .season-strip-content {
     padding-right: 60px;
@@ -863,23 +829,23 @@ button { cursor: pointer; border: none; }
   .season-strip-inner {
     height: 360px;
   }
-.season-strip-logo {
+
+  .season-strip-logo {
     font-size: 25px;
   }
+
   .season-strip-content {
     margin: auto;
     padding: 0 20px;
     text-align: center;
   }
+
   .season-strip-content h1 {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
 }
-
-}
-
-/* ================= ENDING SECTION ================= */
 
 .ending-section {
   background: #000;
@@ -887,7 +853,6 @@ button { cursor: pointer; border: none; }
   padding: 80px 20px 40px;
 }
 
-/* CTA */
 .ending-cta {
   text-align: center;
   margin-bottom: 80px;
@@ -917,7 +882,6 @@ button { cursor: pointer; border: none; }
   color: black;
 }
 
-/* CONTENT GRID */
 .ending-content {
   max-width: 1400px;
   margin: auto;
@@ -926,7 +890,6 @@ button { cursor: pointer; border: none; }
   gap: 40px;
 }
 
-/* BRAND */
 .footer-brand p {
   font-size: 13px;
   margin: 14px 0;
@@ -936,10 +899,9 @@ button { cursor: pointer; border: none; }
 .footer-logo {
   font-size: 22px;
   font-weight: 700;
-  color:#f47521 ;
+  color: #f47521;
   margin-bottom: 10px;
 }
-
 
 .footer-brand small {
   display: block;
@@ -969,7 +931,6 @@ button { cursor: pointer; border: none; }
   color: #ccc;
 }
 
-/* COLUMNS */
 .footer-col h4 {
   color: #fff;
   font-size: 14px;
@@ -991,7 +952,6 @@ button { cursor: pointer; border: none; }
   color: #f47521;
 }
 
-/* LEGAL */
 .legal-bar {
   border-top: 1px solid #222;
   margin-top: 60px;
@@ -1011,7 +971,6 @@ button { cursor: pointer; border: none; }
   color: #fff;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .ending-content {
     grid-template-columns: 1fr 1fr;
