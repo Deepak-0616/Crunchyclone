@@ -941,7 +941,10 @@ button {
     width: 140px;
     height: 200px;
   }
-
+  
+  .section-header {
+    font-size: 18px;
+  }
   .season-strip-inner {
     height: 360px;
   }
